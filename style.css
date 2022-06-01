@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+.main-header {
+    padding: 10px 10px;
+    background-color: #13293d;
+    color: white;
+    text-align: center;
+}
+
+.sub-header {
+    background-color: #13293d;
+    color: white;
+    border-top: solid black 3px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.sub-header li {
+    padding:10px 0;
+}
+
+.sub-header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    margin-top: 2%;
+} 
+
+#about-me-section {
+    display: flex;
+    padding: 0 50px;
+    flex-direction: column;
+}
+
+.about-me-text {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+.my-work-container {
+    padding: 10px;
+}
+
+.my-work-header {
+    background-color: #13293d;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.project-1 {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border: solid black 1px;
+    color: black;
+    background-color: white;
+    height: 300px;
+    width: 100%;
+    background-image: url(./Assets/CSS\ Refactoring.png);
+    background-size: 300px 300px;
+}
+.projects {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border: solid black 1px;
+    color: black;
+    background-color: white;
+    height: 300px;
+    width: 100%;
+    background-image: url(./Assets/CSS\ Refactoring.png);
+    background-size: 300px 300px;
+}
+
+#contact-me-section {
+    /* text-align: center; */
+    /* padding: 30px; */
+}
+
+.contact-me-header {
+    background-color:#13293d;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+#contact-me-section ul {
+    padding: 30px;
+    list-style: none;
+    text-align: center;
+}
+
+.img-me {
+    min-width: 100%;
+}
+
+ .project-img {
+     width: 100%;    
+}
+    
+.project-title {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.about-me-section h2 {
+    text-align: center;
+}
+
+.about-me-text p {
+    padding: 20px 0;
+}
+
+@media screen and (min-width: 1024px) {
+     #about-me-section{
+         flex-direction: row;
+        
+    }
+}
+
+ @media screen and (min-width: 1024px) {
+    .projects{
+        /* display: inline-block; */
+        width: 49.7%;
+}
+} 
