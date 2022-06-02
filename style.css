@@ -7,6 +7,7 @@
 
 body {
     font-size: 1.5rem;
+    padding: 10px;
 }
 
 .main-header {
@@ -41,6 +42,10 @@ main {
     display: flex;
     padding: 0 50px;
     flex-direction: column;
+    align-items: center;
+    border: 5px solid pink;
+    background-color: #555;
+
 }
 
 .about-me-text {
@@ -70,10 +75,9 @@ main {
     background-color: white;
     height: 300px;
     width: 100%;
-    background-image: url(./Assets/CSS\ Refactoring.png);
     background-size: 300px 300px;
 }
-.projects {
+.project-2 {
     display: inline-block;
     position: relative;
     text-align: center;
@@ -82,7 +86,18 @@ main {
     background-color: white;
     height: 300px;
     width: 100%;
-    background-image: url(./Assets/CSS\ Refactoring.png);
+    background-size: 300px 300px;
+}
+
+.project-3 {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border: solid black 1px;
+    color: black;
+    background-color: white;
+    height: 300px;
+    width: 100%;
     background-size: 300px 300px;
 }
 
@@ -105,7 +120,8 @@ main {
 }
 
 .img-me {
-    min-width: 100%;
+    /* min-width: 100%; */
+    max-width: 40vw;
 }
 
  .project-img {
@@ -141,3 +157,12 @@ main {
         width: 49.7%;
 }
 } 
+
+/* @media screen and (min-width: 768px) {
+    .sub-header {
+        display: block;
+        border-top: solid black 3px;
+        padding: 15px 0;
+        text-align: center;
+    }
+}  */
