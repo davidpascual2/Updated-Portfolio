@@ -4,6 +4,7 @@
         <meta charset="UTF-8"/>
         <title>My Portfolio</title>
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> is this needed?-->
+        <script src="https://kit.fontawesome.com/9a932cc8df.js" crossorigin="anonymous"></script>
         <link  rel="stylesheet" href="./style.css"/>
     </head>
 
@@ -14,10 +15,10 @@
         </header>
 
         <nav class="sub-header">
-            <a href="#about-me-section">About Me</a>
-            <a href="#my-work">My Work</a>
-            <a href="#contact-me-section">Contact Me</a>
-            <a href="https://drive.google.com/file/d/17Jvq3sjg9rpxqDu-FHkRg67vU2wp6REC/view?ths=true" target="_blank">Resume</a>
+            <a class="nav-bar" href="#about-me-section">About Me</a>
+            <a class="nav-bar" href="#my-work">My Work</a>
+            <a class="nav-bar" href="#contact-me-section">Contact Me</a>
+            <a class="nav-bar" href="https://drive.google.com/file/d/17Jvq3sjg9rpxqDu-FHkRg67vU2wp6REC/view?ths=true" target="_blank">Resume</a>
         </nav>
 
         <!-- <nav class="sub-header">
@@ -48,7 +49,7 @@
                 
                 <div class="about-me-text">
                     <h2 class="about-me-title">About me</h2>
-                    <p class="about-me-paragraph"> I am a graduate from the University of Washington class of 2018. Since then have explored managerial and entreprenurial opportunities. I am currently a student learning software development that includes HTML, CSS, JavaScript, and Node.js</p>
+                    <p class="about-me-paragraph"> I am a graduate from the University of Washington class of 2018. Since then I have explored managerial and entreprenurial opportunities. I am currently a student learning software development that includes HTML, CSS, JavaScript, and Node.js</p>
                 </div>
             </section>
             
@@ -58,16 +59,16 @@
                 </header>
                 
                 <div class="my-work-container">
-                    <a href="https://www.google.com/" target="_blank"><img src="./assets/movie-selector-SS.png" alt="movie selector screenshot" class="project-1">
-                        <h3 class="project-title">project 1</h3>
+                    <a class="link" href="https://www.google.com/" target="_blank"><img src="./assets/movie-selector-SS.png" alt="movie selector screenshot" class="project-1">
+                        <h3 class="project-title">Random Movie Selector</h3>
                     </a>
 
-                    <a href="https://www.google.com/" target="_blank"><img src="./assets/weather-dashboard-SS.png" alt="weather screenshot" class="project-2">
-                        <h3 class="project-title">project 2</h3>
+                    <a class="link" href="https://www.google.com/" target="_blank"><img src="./assets/weather-dashboard-SS.png" alt="weather screenshot" class="project-2">
+                        <h3 class="project-title">Weather API</h3>
                     </a>
 
-                    <a href="https://www.google.com/" target="_blank"><img src="./assets/code-quiz-SS.png" alt="code quiz screenshot" class="project-3">
-                        <h3 class="project-title">project 3</h3>
+                    <a class="link" href="https://www.google.com/" target="_blank"><img src="./assets/code-quiz-SS.png" alt="code quiz screenshot" class="project-3">
+                        <h3 class="project-title">Code Quiz</h3>
                     </a>
                 </div>
             </section>
@@ -77,11 +78,15 @@
                 <h2>Contact Me</h2>
                 </header>
                 
-                <ul>
-                    <li>Phone: (253) 951-0250</li>
-                    <li>Email: Davidpascual200@gmail.com</li>
-                    <li>Github: <a href="https://github.com/davidpascual2">Github.com</a></li>
-                </ul>
+                <div>
+                    <p>Phone: (253) 951-0250</p>
+                    <p>Email: davidpascual200@gmail.com</p>
+                    <p><a href="https://github.com/davidpascual2" target="_blank">
+                        <i class="fa-brands fa-github"></i> Github</a></p>
+                    <p><a href='https://www.linkedin.com/in/davidpascual2/'>
+                        <i class="fa-brands fa-linkedin"> linkedIn</i>
+                    </a></p>
+                </div>
             </section>
         </main>
     </body>

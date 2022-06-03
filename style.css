@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:'encode Sans Compressed', sans-serif;
 }
 
 body {
@@ -16,14 +17,27 @@ body {
     color: white;
     text-align: center;
 }
-
+/* ________________________________________ */
 .sub-header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
     background-color: #13293d;
     color: white;
     border-top: solid black 3px;
     padding: 15px 0;
     text-align: center;
 }
+
+.nav-bar {
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* _____________________________________________________ */
 
 .sub-header li {
     padding:10px 0;
@@ -43,8 +57,8 @@ main {
     padding: 0 50px;
     flex-direction: column;
     align-items: center;
-    border: 5px solid pink;
-    background-color: #555;
+    /* border: 5px solid pink; */
+    /* background-color: #555; */
 
 }
 
@@ -57,7 +71,7 @@ main {
     justify-content: center;
 }
 .my-work-container {
-    padding: 10px;
+    padding: 2rem 0;
 }
 
 .my-work-header {
@@ -73,9 +87,10 @@ main {
     border: solid black 1px;
     color: black;
     background-color: white;
-    height: 300px;
+    height: 30vh;
     width: 100%;
     background-size: 300px 300px;
+    /* max-width: 50vw; */
 }
 .project-2 {
     display: inline-block;
@@ -84,9 +99,11 @@ main {
     border: solid black 1px;
     color: black;
     background-color: white;
-    height: 300px;
+    height: 30vh;
     width: 100%;
     background-size: 300px 300px;
+    /* max-width: 50vw; */
+    /* max-height: 30vh; */
 }
 
 .project-3 {
@@ -96,7 +113,7 @@ main {
     border: solid black 1px;
     color: black;
     background-color: white;
-    height: 300px;
+    height: 30vh;
     width: 100%;
     background-size: 300px 300px;
 }
@@ -122,6 +139,7 @@ main {
 .img-me {
     /* min-width: 100%; */
     max-width: 40vw;
+    padding: 2rem 0;
 }
 
  .project-img {
@@ -144,6 +162,10 @@ main {
     padding: 20px 0;
 }
 
+.link {
+    position: relative;
+}
+
 @media screen and (min-width: 1024px) {
      #about-me-section{
          flex-direction: row;
@@ -158,11 +180,41 @@ main {
 }
 } 
 
-/* @media screen and (min-width: 768px) {
-    .sub-header {
+@media screen and (max-width: 1024px) {
+    .sub-header{
+        flex-direction: column;
+}
+} 
+
+@media screen and (min-width: 1024px) {
+    .my-work-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+}
+    .project-1{
+        width: 80vw;
+        height: 60vh;
         display: block;
-        border-top: solid black 3px;
-        padding: 15px 0;
-        text-align: center;
+        /* align-self: center; */
+        margin-bottom: 2rem;
     }
-}  */
+
+    .project-2 {
+        /* width: 50%; */
+        display: block;
+        margin-right: 1.5rem;
+        width: 42vw;
+        height: 35vh;
+    }
+
+    .project-3 {
+        /* width: 50%; */
+        display: block;
+        margin-left: 1.5rem;
+        width: 42vw;
+        height: 35vh;
+    }
+} 
+
