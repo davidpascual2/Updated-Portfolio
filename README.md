@@ -15,4 +15,4 @@ This portfolio contains work that I have created, incldung a weather app that ca
 ![](./assets/port-ss-2.png)
 
 ## Deployed Page
-[final product]()
+[final product](https://davidpascual2.github.io/Updated-portfolio/)
